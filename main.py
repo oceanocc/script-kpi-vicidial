@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-import mysql.connector
+import mysql
 import os
 
 # Load .env variables
@@ -40,3 +40,4 @@ query = f"""
     GROUP BY DATE(hvd.call_date), hvd.list_id
 """
 cursor.execute(query)
+cursor.commit()
