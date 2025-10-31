@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-import mysql
+import mysql.connector
 import os
 
 # Load .env variables
