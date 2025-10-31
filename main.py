@@ -40,4 +40,4 @@ query = f"""
     GROUP BY DATE(hvd.call_date), hvd.list_id
 """
 cursor.execute(query)
-cursor.commit()
+db.commit()
